@@ -4,21 +4,10 @@
     "configExternalURL": "",
     "baseBranches": []
   },
-  "scanSettingsSAST": {
-    "enableScan": false,
-    "scanPullRequests": false,
-    "incrementalScan": true,
-    "baseBranches": [],
-    "snippetSize": 10
-  },
   "checkRunSettings": {
     "vulnerableCheckRunConclusionLevel": "failure",
     "displayMode": "diff",
     "useMendCheckNames": true
-  },
-  "checkRunSettingsSAST": {
-    "checkRunConclusionLevel": "failure",
-    "severityThreshold": "high"
   },
   "issueSettings": {
     "minSeverityLevel": "LOW",
@@ -27,6 +16,8 @@
   "remediateSettings": {
     "workflowRules": {
       "enabled": true
-    }
+    },
+    "enableRenovate": true,
+    "extends": ["github>whitesource/merge-confidence:beta"]
   }
 }
