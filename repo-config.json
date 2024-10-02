@@ -35,10 +35,10 @@
     "minSeverityLevel": "LOW",
     "issueType": "DEPENDENCY"
   },
- "remediateSettings": {
+"remediateSettings": {
     "enableRenovate": true,
-       "extends": [
-       "config:recommended",
-       "mergeConfidence:all-badges",
-       "github>mend-toolkit/mend-examples//Repo-Integration/Renovate/smart-merge"
-      ]
+     "config:recommended",
+        "extends": ["mergeConfidence:all-badges"]
+    "github>mend-toolkit/mend-examples//Repo-Integration/Renovate/smart-merge"
+  }
+}
