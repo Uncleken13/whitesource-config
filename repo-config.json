@@ -36,9 +36,11 @@
     "issueType": "DEPENDENCY"
   },
 "remediateSettings": {
-    "enableRenovate": true,
-     "config:recommended",
-        "extends": ["mergeConfidence:all-badges"]
-    "github>mend-toolkit/mend-examples//Repo-Integration/Renovate/smart-merge"
-  }
+"enableRenovate": true,
+    "extends": [
+       "config:recommended",
+       "mergeConfidence:all-badges",
+       "github>mend-toolkit/mend-examples//Repo-Integration/Renovate/smart-merge"
+      ]
+}
 }
